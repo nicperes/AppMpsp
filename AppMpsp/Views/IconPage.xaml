@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppMPSP.Views.IconPage">
+    <ContentPage.Content>
+        <StackLayout Padding="30">
+            <Label Text="&#xf007;" FontSize="36">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String" 
+                                Android="fa-solid-900.ttf#Font Awesome 5 Free Regular" 
+                                iOS="Font Awesome 5 Free" />
+                </Label.FontFamily>
+            </Label>
+
+            <Label Text="&#xf270;" FontSize="26">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String" 
+                                Android="fa-brands-400.ttf#Font Awesome 5 Free Regular" 
+                                iOS="Font Awesome 5 Free" />
+                </Label.FontFamily>
+            </Label>
+
+            <Label Text="&#xf09d;" FontSize="36">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String" 
+                                Android="fa-regular-400.ttf#Font Awesome 5 Free Regular" 
+                                iOS="Font Awesome 5 Free" />
+                </Label.FontFamily>
+            </Label>
+
+
+            <!--
+            <Label Text="&#f778;" FontSize="26">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String" 
+                                Android="fa-solid-900.ttf#Font Awesome 5 Free Regular" 
+                                iOS="Font Awesome 5 Free" />
+                </Label.FontFamily>
+            </Label>
+            -->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

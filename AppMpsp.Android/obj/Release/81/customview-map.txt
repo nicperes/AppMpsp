@@ -1,0 +1,9 @@
+android.support.design.widget.TabLayout;obj\Release\81\res\layout\tabbar.xml
+android.support.v7.widget.Toolbar;obj\Release\81\res\layout\toolbar.xml
+FrameLayout;C:\Users\favar\Downloads\Nicolas\FiapCoin\AppMPSP\AppMPSP.Android\obj\Release\81\lp\31\jl\res\layout\zxingscanneractivitylayout.xml
+FrameLayout;C:\Users\favar\Downloads\Nicolas\FiapCoin\AppMPSP\AppMPSP.Android\obj\Release\81\lp\31\jl\res\layout\zxingscannerfragmentlayout.xml
+item;obj\Release\81\res\values\styles.xml
+resources;C:\Users\favar\Downloads\Nicolas\FiapCoin\AppMPSP\AppMPSP.Android\obj\Release\81\lp\30\jl\res\values\strings.xml
+resources;obj\Release\81\res\values\styles.xml
+string;C:\Users\favar\Downloads\Nicolas\FiapCoin\AppMPSP\AppMPSP.Android\obj\Release\81\lp\30\jl\res\values\strings.xml
+style;obj\Release\81\res\values\styles.xml

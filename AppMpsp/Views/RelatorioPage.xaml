@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="AppMPSP.Views.RelatorioPage"
+             xmlns:vm="clr-namespace:AppMPSP.ViewModel"
+             Title="Relatorio">
+
+     <ContentPage.BindingContext>
+        <vm:RelatorioViewModel></vm:RelatorioViewModel>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <Label Text="Arpensp" FontSize="Large"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Label Text="Cartorio do Registro" FontSize="Medium"></Label>
+                <Label Text="{Binding Arpensp.CartorioRegistro}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Numero CNS" FontSize="Medium"></Label>
+                <Label Text="{Binding Arpensp.NumCNS}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="UF" FontSize="Medium"></Label>
+                <Label Text="{Binding Arpensp.UF}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Nome Conjuge" FontSize="Medium"></Label>
+                <Label Text="{Binding Arpensp.NomeConj}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Novo Nome do Conjuge" FontSize="Medium"></Label>
+                <Label Text="{Binding Arpensp.NovoNomeConj}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Nome do Conjuge 2" FontSize="Medium"></Label>
+                <Label Text="{Binding Arpensp.NomeConj2}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Novo Nome do Conjuge 2" FontSize="Medium"></Label>
+                <Label Text="{Binding Arpensp.NovoNomeConj2}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Data Casamento" FontSize="Medium"></Label>
+                <Label Text="{Binding Arpensp.DataCasamento}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Matricula" FontSize="Medium"></Label>
+                <Label Text="{Binding Arpensp.Matricula}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Data Entrada" FontSize="Medium"></Label>
+                <Label Text="{Binding Arpensp.DataEntrada}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Data Registro" FontSize="Medium"></Label>
+                <Label Text="{Binding Arpensp.DataRegistro}"></Label>
+
+                <StackLayout BackgroundColor="Black">
+                    <Label Text="" HeightRequest="1"/>
+                </StackLayout>
+            
+                <Label Text="Caged" FontSize="Large"
+            VerticalOptions="CenterAndExpand" 
+            HorizontalOptions="CenterAndExpand" />
+
+                <Label Text="Nome" FontSize="Medium"></Label>
+                <Label Text="{Binding Caged.Nome}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Telefone" FontSize="Medium"></Label>
+                <Label Text="{Binding Caged.Telefone}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Ramal" FontSize="Medium"></Label>
+                <Label Text="{Binding Caged.Ramal}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Email" FontSize="Medium"></Label>
+                <Label Text="{Binding Caged.Email}"></Label>
+            
+                <StackLayout BackgroundColor="Black">
+                    <Label Text="" HeightRequest="1"/>
+                </StackLayout>
+            
+                <Label Text="Jucesp" FontSize="Large"
+            VerticalOptions="CenterAndExpand" 
+            HorizontalOptions="CenterAndExpand" />
+
+                <Label Text="Data" FontSize="Medium"></Label>
+                <Label Text="{Binding Jucesp.Data}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Nome" FontSize="Medium"></Label>
+                <Label Text="{Binding Jucesp.Nome}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Numero Matriz" FontSize="Medium"></Label>
+                <Label Text="{Binding Jucesp.NumMatriz}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Tipo de Empresa" FontSize="Medium"></Label>
+                <Label Text="{Binding Jucesp.TipoEmpresa}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Data Construção" FontSize="Medium"></Label>
+                <Label Text="{Binding Jucesp.DataConst}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Inicio das Atividades" FontSize="Medium"></Label>
+                <Label Text="{Binding Jucesp.InicioAtiv}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Capital" FontSize="Medium"></Label>
+                <Label Text="{Binding Jucesp.Capital}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Logradouro" FontSize="Medium"></Label>
+                <Label Text="{Binding Jucesp.Logradouro}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Numero" FontSize="Medium"></Label>
+                <Label Text="{Binding Jucesp.Numero}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Complemento" FontSize="Medium"></Label>
+                <Label Text="{Binding Jucesp.Complemento}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Bairro" FontSize="Medium"></Label>
+                <Label Text="{Binding Jucesp.Bairro}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Municipio" FontSize="Medium"></Label>
+                <Label Text="{Binding Jucesp.Municipio}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Cep" FontSize="Medium"></Label>
+                <Label Text="{Binding Jucesp.Cep}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Uf" FontSize="Medium"></Label>
+                <Label Text="{Binding Jucesp.Uf}"></Label>
+
+                <StackLayout BackgroundColor="Black">
+                    <Label Text="" HeightRequest="1"/>
+                </StackLayout>
+
+                <Label Text="Censec" FontSize="Large"
+            VerticalOptions="CenterAndExpand" 
+            HorizontalOptions="CenterAndExpand" />
+
+                <Label Text="Carga" FontSize="Medium"></Label>
+                <Label Text="{Binding Censec.Carga}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Mes" FontSize="Medium"></Label>
+                <Label Text="{Binding Censec.Mes}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Ano" FontSize="Medium"></Label>
+                <Label Text="{Binding Censec.Ano}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Ato" FontSize="Medium"></Label>
+                <Label Text="{Binding Censec.Ato}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Dia do Ato" FontSize="Medium"></Label>
+                <Label Text="{Binding Censec.DiaAto}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Mes do Ato" FontSize="Medium"></Label>
+                <Label Text="{Binding Censec.MesAto}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Ano do Ato" FontSize="Medium"></Label>
+                <Label Text="{Binding Censec.AnoAto}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Livro" FontSize="Medium"></Label>
+                <Label Text="{Binding Censec.Livro}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Folha" FontSize="Medium"></Label>
+                <Label Text="{Binding Censec.Folha}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Nomes das Partes" FontSize="Medium"></Label>
+                <Label Text="{Binding Censec.NomesPartes}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="CpfCnpj das Partes" FontSize="Medium"></Label>
+                <Label Text="{Binding Censec.CpfCnpjPartes}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Qualidade das Partes" FontSize="Medium"></Label>
+                <Label Text="{Binding Censec.QualidadePartes}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="UF" FontSize="Medium"></Label>
+                <Label Text="{Binding Censec.UF}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Municipio" FontSize="Medium"></Label>
+                <Label Text="{Binding Censec.Municipio}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Cartorio" FontSize="Medium"></Label>
+                <Label Text="{Binding Censec.Cartorio}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Telefone do Cartorio" FontSize="Medium"></Label>
+                <Label Text="{Binding Censec.TelefoneCartorio}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Tipo de Telefone do Cartorio" FontSize="Medium"></Label>
+                <Label Text="{Binding Censec.TipoTelefoneCartorio}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Contato do Cartorio" FontSize="Medium"></Label>
+                <Label Text="{Binding Censec.ContatoCartorio}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Status do Cartorio" FontSize="Medium"></Label>
+                <Label Text="{Binding Censec.StatusCartorio}"></Label>
+
+
+                <StackLayout BackgroundColor="Black">
+                    <Label Text="" HeightRequest="1"/>
+                </StackLayout>
+
+                <Label Text="Siel" FontSize="Large"
+            VerticalOptions="CenterAndExpand" 
+            HorizontalOptions="CenterAndExpand" />
+
+                <Label Text="Titulo" FontSize="Medium"></Label>
+                <Label Text="{Binding Siel.Titulo}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Zona" FontSize="Medium"></Label>
+                <Label Text="{Binding Siel.Zona}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Data do Domicilio" FontSize="Medium"></Label>
+                <Label Text="{Binding Siel.DataDomicilio}"></Label>
+
+                <StackLayout BackgroundColor="Black">
+                    <Label Text="" HeightRequest="1"/>
+                </StackLayout>
+
+                <Label Text="Sivec" FontSize="Large"
+            VerticalOptions="CenterAndExpand" 
+            HorizontalOptions="CenterAndExpand" />
+
+                <Label Text="Data da Emissao" FontSize="Medium"></Label>
+                <Label Text="{Binding Sivec.DataEmissao}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Estado Civil" FontSize="Medium"></Label>
+                <Label Text="{Binding Sivec.EstadoCivil}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Naturalizado" FontSize="Medium"></Label>
+                <Label Text="{Binding Sivec.Naturalizado}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Posto de Identificacao" FontSize="Medium"></Label>
+                <Label Text="{Binding Sivec.PostoIdentificacao}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Grau de Instituicao" FontSize="Medium"></Label>
+                <Label Text="{Binding Sivec.GrauInstituicao}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Cor do Olho" FontSize="Medium"></Label>
+                <Label Text="{Binding Sivec.CorOlho}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Cor do Cabelo" FontSize="Medium"></Label>
+                <Label Text="{Binding Sivec.CorCabelo}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Cor da Pele" FontSize="Medium"></Label>
+                <Label Text="{Binding Sivec.CorPele}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Profissao" FontSize="Medium"></Label>
+                <Label Text="{Binding Sivec.Profissao}"></Label>
+
+                <StackLayout BackgroundColor="Black">
+                    <Label Text="" HeightRequest="1"/>
+                </StackLayout>
+
+                <Label Text="Detran" FontSize="Large"
+            VerticalOptions="CenterAndExpand" 
+            HorizontalOptions="CenterAndExpand" />
+
+                <Label Text="RG" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.RG}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Expeditor" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.Expeditor}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Registro" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.Registro}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Local" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.Local}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="PID" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.PID}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="EmissaoCnh" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.EmissaoCnh}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Categoria" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.Categoria}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Primeira Habilitação" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.PrimeiraHabilitação}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="StatusCnh" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.StatusCnh}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Renach" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.Renach}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Espelho da Cnh" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.EspelhoCnh}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Validade da Cnh" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.ValidadeCnh}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Pontuacao" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.Pontuacao}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Nome do Pai" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.NomePai}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Nome da Mae" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.NomeMae}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Placa" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.Placa}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Municipio do Carro" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.MunicipioCarro}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Renavam" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.Renavam}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Chassi" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.Chassi}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Numero do Motor" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.NumMotor}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Data da Alteração do Motor" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.DataAltMotor}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Tipo" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.Tipo}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Procedencia" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.Procedencia}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Combustivel" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.Combustivel}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Cor" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.Cor}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Marca/Modelo" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.MarcaModelo}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Categoriado Automovel" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.CategoriaAut}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Fabricacao" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.Fabricacao}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Modelo" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.Modelo}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Logradouro" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.Logradouro}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Numero" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.Numero}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Complemento" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.Complemento}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="CEP" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.CEP}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Bairro" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.Bairro}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Licenciamento" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.Licenciamento}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Data do Licenciamento" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.DataLicenciamento}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+                <Label Text="Datada Emissao da CRV" FontSize="Medium"></Label>
+                <Label Text="{Binding Detran.DataEmissaoCRV}"></Label>
+                <Label Text="" FontSize="Micro"></Label>
+            
+
+                <Button x:Name="BotaoVoltar" Text="Voltar" Clicked="VoltarClicked"></Button>
+            
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
